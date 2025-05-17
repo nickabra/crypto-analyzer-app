@@ -7,32 +7,39 @@
 
 ## 🌟 Overview
 
-**Crypto Analyzer App** è un'applicazione desktop leggera, sviluppata in Python e `tkinter`, che consente di:
+**Crypto Analyzer** è un'app desktop scritta in **Python** con interfaccia moderna grazie a [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter). Ti permette di:
 
-- 📈 Visualizzare il **prezzo**, il **volume** e le **variazioni percentuali** (1h, 24h, 30d, 60d, 90d) delle criptovalute via API CoinMarketCap  
-- 🥇 Consultare la **Top 50** criptovalute ordinate per capitalizzazione di mercato  
-- 💵 **Calcolare** in tempo reale il valore in USD di una quantità definita di crypto  
-- 🔐 Gestire la **API Key** in modo sicuro, memorizzandola nel keyring del sistema operativo  
+- 📈 Visualizzare il prezzo in tempo reale di una criptovaluta.
+- 📊 Esplorare metriche come variazioni % (24h, 30d, 60d, 90d) e supply (circolante, totale, massimo).
+- 🏆 Consultare la classifica **Top 50 Crypto** per capitalizzazione di mercato.
+- 🔒 Memorizzare la tua API Key in modo sicuro grazie a **Keyring**. 
 
-## 🛠️ Installation
+---
+
+## 📦 Requisiti
+
+Assicurati di avere **Python ≥ 3.8** installato.  
+Installa le dipendenze con:
 
 ```bash
-# 1. Clona il repository
-git clone https://github.com/<tuo-username>/crypto-analyzer-app.git
-cd crypto-analyzer-app
+pip install -r requirements.txt
 
-# 2. (Opzionale) Crea e attiva un virtualenv
-python3 -m venv venv
-source venv/bin/activate   # Linux/macOS
-venv\Scripts\activate    # Windows
-```
+---
+
+## 🔑 API Key CoinMarketCap
+
+- Per funzionare, l'app richiede una API Key gratuita da CoinMarketCap Developer Portal.
+- 1 Registrati su pro.coinmarketcap.com.
+- 2 Copia la chiave.
+- 3 La prima volta che avvii l'app, ti verrà chiesto di inserirla.
+- 4 Verrà salvata in modo sicuro sul sistema tramite keyring.
 
 ---
 
 ## 🚀 Usage
 
 ```bash
-python main.py
+python CryptoAnalyzer.py
 ```
 
 - Alla **prima esecuzione** verrà richiesto di inserire la API Key  
@@ -46,19 +53,10 @@ python main.py
 ```text
 crypto-analyzer-app/
 ├── main.py             # Entry point
+├── requirements.txt    # Requirements
 ├── LICENSE             # Licenza MIT
 └── README.md           # Documentazione
 ```
-
----
-
-## ✨ Features
-
-- **Intuitive GUI**: basata su `tkinter` e `ttk.Notebook`  
-- **Secure API Key**: gestita con `keyring`, mai in chiaro  
-- **Caching**: evita chiamate API ripetute entro 5 minuti  
-- **Interactive Updates**: popup iniziale e pulsante dedicato  
-- **On-the-fly Calculation**: converti quantità di crypto in USD  
 
 ---
 
@@ -85,4 +83,6 @@ Contribuzioni, issue e PR sono benvenuti!
 
 ## 📝 License
 
-Questo progetto è distribuito sotto licenza **MIT**.  
+Questo progetto è distribuito sotto licenza **MIT**.
+© 2025 - Sviluppato con ❤️ da **nickabra**  
+
