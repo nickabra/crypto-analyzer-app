@@ -23,6 +23,7 @@ Installa le dipendenze con:
 
 ```bash
 pip install -r requirements.txt
+```
 
 ---
 
