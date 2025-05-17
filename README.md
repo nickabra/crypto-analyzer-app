@@ -29,8 +29,8 @@ pip install -r requirements.txt
 
 ## 🔑 API Key CoinMarketCap
 
-- Per funzionare, l'app richiede una API Key gratuita da CoinMarketCap Developer Portal.
-- 1 Registrati su pro.coinmarketcap.com.
+- Per funzionare, l'app richiede una API Key gratuita da [CoinMarketCap Developer Portal](https://coinmarketcap.com/api/).
+- 1 Registrati su [pro.coinmarketcap.com](https://pro.coinmarketcap.com/signup).
 - 2 Copia la chiave.
 - 3 La prima volta che avvii l'app, ti verrà chiesto di inserirla.
 - 4 Verrà salvata in modo sicuro sul sistema tramite keyring.
